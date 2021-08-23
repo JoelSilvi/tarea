@@ -3,13 +3,14 @@
 include("conexion.php");
 
 if (isset($_POST['update'])) {
-    if (strlen($_POST['cod']) >= 1 && strlen($_POST['email']) >= 1 ) {
+  
+  $cod = trim($_POST['cod']);
+  $name = trim($_POST['name']);
+  $rut = trim($_POST['rut']);
+  $edad = trim($_POST['edad']);
+  $email = trim($_POST['email']);
 
-	    $cod = trim($_POST['cod']);
-	    $email = trim($_POST['email']);
-	   
-	    
-	    $consulta = "UPDATE registro SET emailCliente = 'jaguilar@ggl.cl' WHERE codCliente = '$cod'";
+      $consulta="UPDATE registro SET nombreCliente = '$name', rutCliente = '$rut', edadCliente = '$edad', emailCliente = '$email'  WHERE codCliente = '$cod'";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 
@@ -24,7 +25,8 @@ if (isset($_POST['update'])) {
 	    	?> 
 	    	<h3 class="mal">¡Por favor complete los campos!</h3>
            <?php
-    }
+    
 }
+
 
 ?>

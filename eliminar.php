@@ -9,6 +9,7 @@ if (isset($_POST['delete'])) {
 	   
 	    
 	    $consulta = "DELETE FROM registro WHERE codCliente = '$cod'";
+
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 
