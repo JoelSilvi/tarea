@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .codCliente {
+    width: 40%;
+    color: white;
+    padding-left: 15px;
+    background-color: gray;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .nomCliente {
+    width: 40%;
+    color: white;
+    padding-left: 15px;
+    background-color: gray;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rutCliente {
+    width: 40%;
+    color: white;
+    padding-left: 15px;
+    background-color: gray;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .edadCliente {
+    width: 40%;
+    color: white;
+    padding-left: 15px;
+    background-color: gray;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .emailCliente {
+    width: 40%;
+    color: white;
+    padding-left: 15px;
+    background-color: gray;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .codCliente [type=number] {
+    width: 40%;
+    background-color: yellow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 130px;
+    border-radius: 10px;
+  }
+
+  .nomCliente input[type=text] {
+    width: 40%;
+    background-color: yellow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 130px;
+    border-radius: 10px;
+  }
+
+  .rutCliente input[type=text] {
+    width: 40%;
+    background-color: yellow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 160px;
+    border-radius: 10px;
+  }
+
+  .edadCliente input[type=text] {
+    width: 40%;
+    background-color: yellow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 115px;
+    border-radius: 10px;
+  }
+
+  .emailCliente input[type=email] {
+    width: 40%;
+    background-color: yellow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 25px;
+    border-radius: 10px;
+  }
+
+
+  button {
+    margin-top: 2%;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px double green;
+    color: white;
+    background-color: yellowgreen;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1%;
+  }
+</style>
+
+
+<body>
+  <h1>Registro Clientes</h1>
+  <fieldset>
+    <legend>Datos Cliente</legend>
+    <form>
+      <div class="codCliente">
+        <label>Código cliente:</label>
+        <input type="number" name="cod" id="cod">
+      </div>
+      <div class="nomCliente">
+        <label>Nombre cliente:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="rutCliente">
+        <label>Rut cliente:</label>
+        <input type="text" name="rut" id="rut">
+      </div>
+      <div class="edadCliente">
+        <label>Edad del cliente:</label>
+        <input type="text" name="edad" id="edad">
+      </div>
+      <div class="emailCliente">
+        <label>Correo electrónico cliente:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <button type="button" id="insertar">INSERTAR</button>
+
+        <script src="app.js"></script>
+
+      </div>
+
+    </form>
+  </fieldset>
+
+</body>
+
+</html>
