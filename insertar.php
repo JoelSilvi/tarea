@@ -13,7 +13,6 @@ if (isset($_POST['insertar'])) {
 	    $consulta = "INSERT INTO registro(codCliente,nombreCliente, rutCliente, edadCliente, emailCliente ) VALUES ('$cod','$name','$rut','$edad','$email')";
 	    $resultado = mysqli_query($conex,$consulta);
 
-      
 	    if ($consulta) {
 	    	?> 
 	    	<h3 class="bien">Te has inscripto correctamente</h3>
